@@ -16,14 +16,14 @@ docker compose
 
 Host - localhost
 
-Port - 27019
+Port - 3031
 
 Username - root
 
 Password - example
 
 Or just use this connection string
-```mongodb://root:example@localhost:27019/```
+```mongodb://root:example@localhost:3031/```
 
 For stopping container with mongo you can use ```CTRL + C``` in an active terminal window where you run command above
 
