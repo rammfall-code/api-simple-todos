@@ -20,7 +20,7 @@ Port - 3031
 
 Username - root
 
-Password - example
+Password - admin
 
 Or just use this connection string
 ```mongodb://root:example@localhost:3031/```
