@@ -9,7 +9,7 @@ export const TaskSchema = Type.Object(
       description: 'Title of the task',
     }),
     deadline: Type.String({
-      format: 'date-time',
+      format: 'date',
       description:
         'Deadline of the task after that you can not change completed',
     }),
@@ -47,8 +47,8 @@ export const ListTaskPayload = Type.Object(
         maxLength: 30,
       }),
     ),
-    deadlineFrom: Type.Optional(Type.String({ format: 'date-time' })),
-    deadlineTo: Type.Optional(Type.String({ format: 'date-time' })),
+    deadlineFrom: Type.Optional(Type.String({ format: 'date' })),
+    deadlineTo: Type.Optional(Type.String({ format: 'date' })),
     isCompleted: Type.Optional(Type.Boolean()),
   },
   { $id: 'ListTaskPayload' },
