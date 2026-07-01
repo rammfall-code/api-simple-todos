@@ -11,7 +11,7 @@ export const MovieSchema = Type.Object(
     rating: Type.Union([Type.Number({ minimum: 0, maximum: 10 }), Type.Null()], {
       description: 'Rating of the movie from 0 to 10, null if not rated yet',
     }),
-    watchedAt: Type.Union([Type.String({ format: 'date-time' }), Type.Null()], {
+    watchedAt: Type.Union([Type.String({ format: 'date' }), Type.Null()], {
       description: 'ISO 8601 datetime when the movie was watched, null if not watched yet',
     }),
     status: MovieStatus,
